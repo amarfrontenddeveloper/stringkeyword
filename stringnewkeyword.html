@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concat</title>
+</head>
+<body>
+	<h1>This is concat program in javascript</h1>
+	Enter First Text:<input type="text" name="text" id="a">
+    Enter second Text:<input type="text" name="text" id="b">    
+    <button onclick="concat()">Concat</button>
+    Concat:<textarea rows="15" cols="25" id="c"></textarea>
+   
+</body>
+<script type="text/javascript">
+	
+
+        c.style.backgroundColor = "blue";
+	function concat()
+	
+	{
+        c.style.backgroundColor = "red";
+        c.style.color = "white";
+
+	    x=document.getElementById("a").value;
+	  	 
+	  	y=document.getElementById("b").value;
+	  	//z=(x.charAt(3));
+	  	z=(x.concat(y));
+	  	//z=(x.indexOf("a"));
+	  	//z=(x.lastIndexOf("a"));
+	  	//z=(x.match("amar"));
+	  	//z=(x.replace("amar","yuvraj"));
+	  	//z=parseInt(x)+parseInt(y);
+	  	//z=(x.substr(0,4));
+	  	//z=(x.slice(2,4));
+	  	//z=(x.substr(0,4));
+	  	//z=(x.substring(2,6));
+	  	//z=(x.toLowerCase());
+	  	//z=(x.toUpperCase());
+	  	//z=(x.trim());
+	  	document.getElementById("c").value=z;
+
+	}
+	
+</script>
+</html>
